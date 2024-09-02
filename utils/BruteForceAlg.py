@@ -36,5 +36,5 @@ def fuerza_bruta_sat(formula):
             print(f"Asignación {asignacion} Satisface ✅\n")
             return True, asignacion
     
-    print("No se encontró una asignación que satisfaga la fórmula ❗️")
+    print("No se encontró una asignación que satisfaga la fórmula ❗️\n")
     return False, {}
