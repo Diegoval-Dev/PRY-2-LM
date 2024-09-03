@@ -15,10 +15,25 @@ Este proyecto contiene la implementación en Python de dos algoritmos fundamenta
 # Esta variable define qué algoritmo utilizar
 use_dpll = True || False
 
-# Casos de ejemplo uno éxito (1) y otro de fracaso (2)
-f_case1 = [ {"¬A"}, {"B", "C"} ]
-f_case2 = [ {"A"}, {"¬A", "B"}, {"¬B"} ]
+# Casos de prueba para verificar los algoritmos
+f_case = [  
+        [{"P"}, {"¬P"}],
+        [{"Q", "P", "¬P"}],
+        [{"¬P", "¬R", "¬S"}, {"¬Q", "¬P", "¬S"}],
+        [{"¬P", "¬Q"}, {"Q", "S"}, {"¬P", "S"}, {"¬Q", "S"}],
+        [{"¬P", "¬Q", "¬R"}, {"Q", "¬R", "P"}, {"¬P", "Q", "R"}],
+        [{"R"}, {"¬Q", "¬R"}, {"¬P", "Q", "¬R"}, {"Q"}]
+    ]
 ```
 
 ## Capturas de ejecución
+
+
+### Algoritmo de Fuerza Bruta
+
+<img width="1070" alt="image" src="https://github.com/user-attachments/assets/c6086066-3a9a-4e87-ab4b-baa6919a30bd">
+
+### Alogritmo DPLL 
+
+<img width="898" alt="image" src="https://github.com/user-attachments/assets/ed6e882f-1665-49e9-a5ed-80d4d1f7514c">
 
